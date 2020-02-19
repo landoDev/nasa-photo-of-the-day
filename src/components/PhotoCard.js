@@ -10,16 +10,18 @@ export default function PhotoCard (){
         axios.get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
         .then(response => {
             console.log(response.data);
-            // setData(response)
+            setData(response.data)
         })
         .catch(error => {
             console.log("Houston, we have a problem: ", error)
         })
     }, [])
     return(
-        <div className="photo-card-container">Content Placeholder</div>
-        // <Photo />
-        // <InfoCard />
+        <div className="photo-card">
+            <Photo url={data.url}/>
+            <InfoCard title={data.title} date={data.date} explanation={data.explanation} />
+        </div>
+
     );
 
 }
