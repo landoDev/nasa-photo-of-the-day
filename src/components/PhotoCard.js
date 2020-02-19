@@ -16,7 +16,9 @@ export default function PhotoCard (){
             console.log("Houston, we have a problem: ", error)
         })
     }, [])
+    if (!data) return <h3>Loading...</h3>;
     return(
+        
         <div className="photo-card">
             <Photo url={data.url}/>
             <InfoCard title={data.title} date={data.date} explanation={data.explanation} />
