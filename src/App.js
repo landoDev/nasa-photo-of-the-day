@@ -5,14 +5,16 @@ import PhotoCard from "./components/PhotoCard"
 import styled from "styled-components";
 
 // const BodyWrapper = styled.div`
-//   text-align: center;
+//   background-image: 
 // `;
-
+// I want the app to have the bg image in my folder
 function App() {
   return (
     <div className="App">
+    {/* // <BodyWrapper> */}
       <Header />
       <PhotoCard />
+    {/* // </BodyWrapper> */}
     </div>
   );
 }

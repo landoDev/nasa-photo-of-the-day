@@ -8,10 +8,10 @@ const CardDiv = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: red;
+    background-color: #0b3d91;
     margin: 0 auto;
     max-width: 50%;
-    border: 5px solid black;
+    border: 5px solid #fc3d21;
 
 `;
 
