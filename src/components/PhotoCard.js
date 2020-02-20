@@ -10,9 +10,10 @@ const CardDiv = styled.div`
     justify-content: center;
     background-color: #0b3d91;
     margin: 0 auto;
+    margin-bottom: 10%;
     max-width: 50%;
     border: 5px solid #fc3d21;
-    box-shadow: 10px 5px 5px black;
+    box-shadow: 10px 5px 5px 5px black, -10px -5px 5px -5px black; 
 
 `;
 
