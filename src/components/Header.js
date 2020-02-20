@@ -1,6 +1,7 @@
 import React from "react";
 // import LogoTransparent from "../images/logo-transparent.jpg";
 import styled from "styled-components";
+import logo from "./images/logo.jpg";
 
 const HeaderDiv = styled.div`
     background-color: #0b3d91;
@@ -13,6 +14,9 @@ const StyleH1 = styled.h1`
     color: white;
 `;
 
+// const LogoDiv = styled.div`
+// `;
+
 export default function Header () {
     return (
         // <div className="header-container">
@@ -20,7 +24,7 @@ export default function Header () {
         //     <h1 className="page-title">NASA Photo of the Day</h1>
         // </div>
         <HeaderDiv>
-            <img src="" alt="logo"></img>
+            <img src={logo} alt="logo"></img>
             <StyleH1>NASA Photo of the Day</StyleH1>
         </HeaderDiv>
     )
