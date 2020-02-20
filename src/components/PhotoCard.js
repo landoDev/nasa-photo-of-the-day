@@ -2,6 +2,13 @@ import React, {useState, useEffect} from "react";
 import Photo from "./Photo";
 import InfoCard from "./InfoCard";
 import axios from "axios";
+import styled from "styled-components";
+
+const CardDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+`;
 
 export default function PhotoCard (){
     const [data, setData] = useState([])
