@@ -10,8 +10,10 @@ const CardDiv = styled.div`
     justify-content: center;
     background-color: #0b3d91;
     margin: 0 auto;
+    margin-bottom: 10%;
     max-width: 50%;
     border: 5px solid #fc3d21;
+    box-shadow: 10px 5px 5px 5px black, -10px -5px 5px -5px black; 
 
 `;
 
@@ -21,7 +23,7 @@ export default function PhotoCard (){
     useEffect(()=>{
         axios.get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
         .then(response => {
-            console.log(response.data);
+            console.log(response);
             setData(response.data)
         })
         .catch(error => {
