@@ -8,6 +8,11 @@ const CardDiv = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: red;
+    margin: 0 auto;
+    max-width: 50%;
+    border: 5px solid black;
+
 `;
 
 export default function PhotoCard (){
@@ -26,10 +31,12 @@ export default function PhotoCard (){
     if (!data) return <h3>Loading...</h3>;
     return(
         
-        <div className="photo-card">
+        // <div className="photo-card">
+        <CardDiv>
             <Photo url={data.url}/>
             <InfoCard title={data.title} date={data.date} explanation={data.explanation} />
-        </div>
+        </CardDiv>
+        // </div>
 
     );
 
